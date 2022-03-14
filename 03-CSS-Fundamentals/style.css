@@ -1,0 +1,76 @@
+/*seis
+propiedades CSS 
+para los textos
+1.-font-size
+2.-font-family
+3.-font-style
+4.-line-height / espacio entre líneas
+5.-text-transform / poner texto en mayuscula, etc
+6.-text-align / alinear texto al centro, etc
+*/
+
+h1, h2, h3, h4, p, li {
+    /*La fuente por lo general se llama
+    desde internet. No todos los 
+    usuarios tienen las mismas fuentes
+    instaladas*/
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 26px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center
+}
+
+p {
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+li {
+    font-size: 20px;
+}
+
+/*Especificidad para solamente 
+todos los parrafos del footer*/
+/* footer p{
+    font-size: 16px;
+} */
+
+/*Especificidad por 'ID'*/
+#copyright {
+    font-size: 16px;
+}
+
+#author {
+    font-style: italic;
+    font-size: 18px;
+}
+
+/*Especificidad por clase*/
+.related-author{
+    font-size: 20px;
+    /*Peso de fuente, por ejemplo, 
+    para poner texto en negrita*/
+    font-weight: bold;
+}
+
+/*Esta declaración elimina las puntos de viñetas*/
+.related-posts {
+    list-style: none;
+}
